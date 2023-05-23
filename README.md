@@ -47,6 +47,17 @@ Provide command line to setup and run codebuild aggregator in CMD especially for
 
    - `prepare`
      Initialize required module to run aggregator throught CLI. Make sure to running in **powershell with administrator mode**
+     - notes:
+       if you encountered this error, 
+
+       ```
+       Installing gsts...
+       Refreshing environment variables from registry for cmd.exe. Please wait...Finished..
+       'npm' is not recognized as an internal or external command,
+       operable program or batch file.
+       Error occurred during gsts installation: Command '['npm', 'install', '-g', 'gsts@4.0.1']' returned non-zero exit status 1.
+       ```
+       Don't worry, just run a **new powershell with administor mode** and running the same script
    - `tidy-up`
      Uninstall existing module. Mostly chocolatey are installed in `C:/ProgramData/chocolatey` and to uninstall it just remove the folder manually
    - `login`

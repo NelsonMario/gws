@@ -82,7 +82,7 @@ class AwsCli(ModuleValidator):
         # Add configuration for aws user or role
         print('Adding AWS configuration...')
         
-        profile_name = input('Input profile name (ex: flBusinessAnalyst:tvlk-eci-stg) : ')
+        profile_name = input('Input profile name (ex: flBusinessAnalyst@tvlk-eci-stg) : ')
         email = credential.EMAIL
         account_id = input('Input your account_id : ')
         role_name = input('Input role name (flBusinessAnalyst) : ')
