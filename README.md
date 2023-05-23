@@ -48,7 +48,8 @@ Provide command line to setup and run codebuild aggregator in CMD especially for
    - `prepare`
      Initialize required module to run aggregator throught CLI. Make sure to running in **powershell with administrator mode**
      - notes:
-       if you encountered this error, 
+
+       if you encountered this error,
 
        ```
        Installing gsts...
@@ -69,6 +70,14 @@ Provide command line to setup and run codebuild aggregator in CMD especially for
 4. ### Running Aggregator through CLI
 
    Here is [sheet](https://docs.google.com/spreadsheets/d/1qwVGdhWfVwiVBKryOwFpAtKjjuymrcSgyUMHNj-h98A/edit?usp=sharing) that generate aggregator command line for windows. Make sure if your email already listed in related role in AWS.
+
+   notes:
+
+   If you ecountered `Failed to create process`, There are several handling :
+
+
+   - Run `python3 ./gws.py tidy-up`
+   - If the first step doesn't working, Remove the `AMAZON` folder, Usuallly it will be located on `C:\Program Files\AMAZON`
 5. ### Feedback
 
    Please contact related engineer if there are a issues regarding of installation.
