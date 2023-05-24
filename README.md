@@ -68,7 +68,7 @@ Provide command line to setup and run codebuild aggregator in CMD especially for
        - Node JS
          Remove the Node Js by windows uninstaller, just right click to the icon Node JS > Uninstall
        - Chocolatey
-         Remove the chocolatey folder on `C:/ProgramData`
+         Remove the `chocolatey` folder on `C:/ProgramData`
        - AwsCli
          Remove the `AMAZON` folder, Usuallly it will be located on `C:\Program Files`
        - Gsts
