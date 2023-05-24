@@ -47,6 +47,7 @@ Provide command line to setup and run codebuild aggregator in CMD especially for
 
    - `prepare`
      Initialize required module to run aggregator throught CLI. Make sure to running in **powershell with administrator mode**
+
      - notes:
 
        if you encountered this error,
@@ -61,6 +62,17 @@ Provide command line to setup and run codebuild aggregator in CMD especially for
        Don't worry, just run a **new powershell with administor mode** and running the same script
    - `tidy-up`
      Uninstall existing module. Mostly chocolatey are installed in `C:/ProgramData/chocolatey` and to uninstall it just remove the folder manually
+
+     - notes:
+       If you found the cases, when the module already uninstalled or not existed but you can still access the command. Just make sure the refered module already uninstalled, you can manually check and uninstall the folder manually.
+       - Node JS
+         Remove the Node Js by windows uninstaller, just right click to the icon Node JS > Uninstall
+       - Chocolatey
+         Remove the chocolatey folder on `C:/ProgramData`
+       - AwsCli
+         Remove the `AMAZON` folder, Usuallly it will be located on `C:\Program Files`
+       - Gsts
+         Remove the npm folder on `C:\Users\<username>\AppData\Roaming`
    - `login`
      Login to aws through cli, It same like gsts
    - `add-aws-config`
